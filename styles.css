@@ -4,8 +4,18 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+.top-sec {
+    margin: 100px 0px 0px 40px;
+}
+
+h1 {
+    font-family: "Karla", sans-serif;
+    font-weight: 800;
+}
+
 p {
     color: #D5D4D8;
+    font-weight: 200;
 }
 
 #rand-pass {
@@ -16,7 +26,7 @@ p {
     font-family: "Inter", sans-serif;
     margin-top: 40px;
     background-color: #10B981;
-    padding: 10px 0;
+    padding: 12px 0;
     color: white;
     border-radius: 8px;
     font-size: 1em;
@@ -43,7 +53,7 @@ p {
     margin: 40px auto;
 }
 
-#gen-passwords {
+#passwords {
     display: flex;
     justify-content: center;
     /* Centers horizontally */
@@ -66,9 +76,39 @@ p {
     text-align: center;
     font-size: 18px;
     color: white;
+    height: 25px;
     min-width: 250px;
     /* Ensures readability */
     max-width: 100%;
     /* Prevents overflow */
     word-break: break-word;
+}
+
+/* Mobile-Responsive Adjustments */
+@media screen and (max-width: 600px) {
+    .top-sec {
+        margin-left: 10px;
+        /* Adjust for smaller screens */
+        margin-top: 60px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .btn {
+        width: 90%;
+        /* Full width for smaller screens */
+        font-size: 0.9em;
+        /* Adjust button text size */
+    }
+
+    .pass-box {
+        font-size: 16px;
+        /* Adjust password box font size */
+        min-width: 200px;
+        /* Make boxes more flexible */
+        min-height: 25px;
+        /* Flexible height for smaller screens */
+    }
 }
