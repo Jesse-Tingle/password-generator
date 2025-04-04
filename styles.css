@@ -1,0 +1,74 @@
+body {
+    background-color: #0D1821;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+p {
+    color: #D5D4D8;
+}
+
+#rand-pass {
+    color: #10B981;
+}
+
+.btn {
+    font-family: "Inter", sans-serif;
+    margin-top: 40px;
+    background-color: #10B981;
+    padding: 10px 0;
+    color: white;
+    border-radius: 8px;
+    font-size: 1em;
+    width: 80%;
+    /* Makes the button more flexible */
+    max-width: 300px;
+    /* Prevents the button from being too wide */
+    border: none;
+    text-align: center;
+    /* Ensures the text is centered */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0F9D75;
+    transform: scale(1.05);
+    /* Slight grow effect on hover */
+}
+
+.border-line {
+    border: 1px solid #2F3E53;
+    width: 90%;
+    margin: 40px auto;
+}
+
+#gen-passwords {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Aligns items vertically */
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+    gap: 15px;
+    /* Adds space between boxes */
+    width: 100%;
+    max-width: 800px;
+    /* Prevents excessive width */
+    margin: 20px auto;
+}
+
+.pass-box {
+    background-color: #273549;
+    padding: 15px 20px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    min-width: 250px;
+    /* Ensures readability */
+    max-width: 100%;
+    /* Prevents overflow */
+    word-break: break-word;
+}
